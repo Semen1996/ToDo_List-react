@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ToDo_List-react/static/css/main.8e418d1e.css",
+    "main.js": "/ToDo_List-react/static/js/main.8e69233a.js",
+    "static/js/787.a5cad257.chunk.js": "/ToDo_List-react/static/js/787.a5cad257.chunk.js",
+    "static/media/Inter-Bold.woff?v=3.19": "/ToDo_List-react/static/media/Inter-Bold.93c1301bd9f486c573b3.woff",
+    "static/media/Inter-Black.woff?v=3.19": "/ToDo_List-react/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff?v=3.19": "/ToDo_List-react/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Bold.woff2?v=3.19": "/ToDo_List-react/static/media/Inter-Bold.ec64ea577b0349e055ad.woff2",
+    "static/media/Inter-Black.woff2?v=3.19": "/ToDo_List-react/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2?v=3.19": "/ToDo_List-react/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/delete-icon.svg": "/ToDo_List-react/static/media/delete-icon.91cd80083805bda51018.svg",
+    "index.html": "/ToDo_List-react/index.html",
+    "main.8e418d1e.css.map": "/ToDo_List-react/static/css/main.8e418d1e.css.map",
+    "main.8e69233a.js.map": "/ToDo_List-react/static/js/main.8e69233a.js.map",
+    "787.a5cad257.chunk.js.map": "/ToDo_List-react/static/js/787.a5cad257.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e418d1e.css",
+    "static/js/main.8e69233a.js"
+  ]
+}
