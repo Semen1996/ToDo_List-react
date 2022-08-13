@@ -14,8 +14,11 @@ function Main() {
   // Загружаем данные, которые хранились в локальном хранилище
   useEffect( () => {
     const initTasks = JSON.parse(localStorage.getItem('arrTasks'));
-    setArrTasks(initTasks);
-    setArrFound(initTasks);
+
+    if (initTasks !== null) {
+      setArrTasks(initTasks);
+      setArrFound(initTasks);
+    }
   },[]);
 
   // Функция добавления задачи в список дел
@@ -99,7 +102,7 @@ function Main() {
         }
         </ul>
         <input className="todo-list__searcher" type="text" placeholder="Что ищем?" onChange={handleSearch}  />
-        <div class="todo-list__separator"></div>
+        <div className="todo-list__separator"></div>
       </section>
       <section className="todo-edit">
           <Switch>
