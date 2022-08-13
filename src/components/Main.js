@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Task from './Task';
 import DescriptionTask from './DescriptionTask';
@@ -12,14 +12,12 @@ function Main() {
   const [arrFound, setArrFound] = useState([]);
 
   // Загружаем данные, которые хранились в локальном хранилище
-  useEffect( () => {
+  /*useEffect( () => {
     const initTasks = JSON.parse(localStorage.getItem('arrTasks'));
 
-    if (initTasks !== null) {
-      setArrTasks(initTasks);
-      setArrFound(initTasks);
-    }
-  },[]);
+    setArrTasks(initTasks);
+    setArrFound(initTasks);
+  },[]);*/
 
   // Функция добавления задачи в список дел
   function handleAddItem(e) {
@@ -32,7 +30,7 @@ function Main() {
     });
     setArrTasks([...arrTasks]);
 
-    localStorage.setItem('arrTasks', JSON.stringify(arrTasks));
+    //localStorage.setItem('arrTasks', JSON.stringify(arrTasks));
 
     setTask('');
   }
@@ -47,7 +45,7 @@ function Main() {
     const itemsNotDelete = arrTasks.filter((val,i) => i !== index);
     setArrTasks(itemsNotDelete);
 
-    localStorage.setItem('arrTasks', JSON.stringify(itemsNotDelete));
+    //localStorage.setItem('arrTasks', JSON.stringify(itemsNotDelete));
 
     if (setSearchIsWork) {
       const foundsNotDelete = arrFound.filter((val,i) => val !== item);
@@ -66,7 +64,7 @@ function Main() {
     });              
     setArrTasks(updateTasksDesc);
 
-    localStorage.setItem('arrTasks', JSON.stringify(updateTasksDesc));
+    //localStorage.setItem('arrTasks', JSON.stringify(updateTasksDesc));
   }
 
   // Функция поиска нужной задачи 
